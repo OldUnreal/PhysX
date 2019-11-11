@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|Win32">
+      <Configuration>checked</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|Win32">
+      <Configuration>profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{05CDFB46-A3C7-3DDC-A144-46AD8589376B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">Building Custom Rule C:/GameDev/UnrealTournament/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/public -BC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win32 --check-stamp-file C:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win32/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|Win32'">Building Custom Rule C:/GameDev/UnrealTournament/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|Win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/public -BC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win32 --check-stamp-file C:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win32/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|Win32'">C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|Win32'">C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">Building Custom Rule C:/GameDev/UnrealTournament/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/public -BC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win32 --check-stamp-file C:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win32/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|Win32'">Building Custom Rule C:/GameDev/UnrealTournament/External/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|Win32'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/public -BC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win32 --check-stamp-file C:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win32/sdk_snippets_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|Win32'">C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetRender.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetUtils.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\SnippetVehicleTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\CMakeLists.txt;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetRender.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetTemplate.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetUtils.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\snippets\compiler\cmake\windows\SnippetVehicleTemplate.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|Win32'">C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\ZERO_CHECK.vcxproj">
+      <Project>{0616B291-C2EB-3BFB-BFC4-E2FBD18E14A4}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetArticulation.vcxproj">
+      <Project>{F5765F2E-EBA6-3358-8343-B6F7DDF6BBA3}</Project>
+      <Name>SnippetArticulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetBVHStructure.vcxproj">
+      <Project>{FA87B3D8-8D3A-38EC-A0B6-F3C0525FE24C}</Project>
+      <Name>SnippetBVHStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetContactModification.vcxproj">
+      <Project>{0400F785-5B8C-371B-B187-8B3BCDBE27BA}</Project>
+      <Name>SnippetContactModification</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetContactReport.vcxproj">
+      <Project>{235F21C1-D746-371A-883A-36C191697CC8}</Project>
+      <Name>SnippetContactReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetContactReportCCD.vcxproj">
+      <Project>{88A77A8B-E0D7-3A68-B2A8-00B3ACEF401B}</Project>
+      <Name>SnippetContactReportCCD</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetConvert.vcxproj">
+      <Project>{0B5F74C3-95D0-353C-A9ED-CFB503DE3D06}</Project>
+      <Name>SnippetConvert</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetConvexMeshCreate.vcxproj">
+      <Project>{ED7630F4-6CCB-33F6-9D59-E87EDE5BC92E}</Project>
+      <Name>SnippetConvexMeshCreate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetCustomJoint.vcxproj">
+      <Project>{8D6C2D85-503C-3DDF-B7AD-61D011A31F11}</Project>
+      <Name>SnippetCustomJoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetCustomProfiler.vcxproj">
+      <Project>{16CA8110-7F0A-3193-9949-87746CA9AD17}</Project>
+      <Name>SnippetCustomProfiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetDeformableMesh.vcxproj">
+      <Project>{9B3DA5F1-E938-3EDD-ACEF-BC5232DA113A}</Project>
+      <Name>SnippetDeformableMesh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetDelayLoadHook.vcxproj">
+      <Project>{E95714CD-95C0-3593-ABF7-D0D8B2AE1A3C}</Project>
+      <Name>SnippetDelayLoadHook</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetHelloGRB.vcxproj">
+      <Project>{78222D2E-9745-3D7A-8DF8-FEBDE41CE3DD}</Project>
+      <Name>SnippetHelloGRB</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetHelloWorld.vcxproj">
+      <Project>{8E2F63EF-AB7A-3B40-87D6-2B796A8CEC92}</Project>
+      <Name>SnippetHelloWorld</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetImmediateArticulation.vcxproj">
+      <Project>{2F573D03-6324-3796-BD74-81838653D576}</Project>
+      <Name>SnippetImmediateArticulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetImmediateMode.vcxproj">
+      <Project>{D1CFCE3C-EA37-3F71-ABC8-9E73574B1F80}</Project>
+      <Name>SnippetImmediateMode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetJoint.vcxproj">
+      <Project>{ADEFF108-EA40-3789-A0FB-6505143C977A}</Project>
+      <Name>SnippetJoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetLoadCollection.vcxproj">
+      <Project>{7B9FB145-C08C-38C1-BAD1-AE92E929CCDE}</Project>
+      <Name>SnippetLoadCollection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetMBP.vcxproj">
+      <Project>{0D0291F6-06A0-32A6-B078-511D902156F2}</Project>
+      <Name>SnippetMBP</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetMultiThreading.vcxproj">
+      <Project>{06F1449B-802A-3ED1-B317-42FB6D6D8D5E}</Project>
+      <Name>SnippetMultiThreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetNestedScene.vcxproj">
+      <Project>{3FE5512C-0C54-317E-A4A3-BC91F88D3294}</Project>
+      <Name>SnippetNestedScene</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetPrunerSerialization.vcxproj">
+      <Project>{6960E639-412E-3ECA-A8AE-BFFCB4328460}</Project>
+      <Name>SnippetPrunerSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetRaycastCCD.vcxproj">
+      <Project>{1C8F75D3-43A4-3FB8-9D0F-D52478569D85}</Project>
+      <Name>SnippetRaycastCCD</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetRender.vcxproj">
+      <Project>{27535E65-3250-36F5-9409-9A5B963956B8}</Project>
+      <Name>SnippetRender</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetSerialization.vcxproj">
+      <Project>{DE794D4D-3E68-3347-97D3-B47346B3A8C7}</Project>
+      <Name>SnippetSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetSplitFetchResults.vcxproj">
+      <Project>{F1FB3A2C-9C90-3835-8706-06A4E84F3264}</Project>
+      <Name>SnippetSplitFetchResults</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetSplitSim.vcxproj">
+      <Project>{6CE59A1F-C444-3D2A-8A60-144CDF994C54}</Project>
+      <Name>SnippetSplitSim</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetStepper.vcxproj">
+      <Project>{0C09BEBC-0337-3520-845A-AD645B7021EC}</Project>
+      <Name>SnippetStepper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetToleranceScale.vcxproj">
+      <Project>{3E3D1F52-E041-39E8-92DA-116E4CCFF42B}</Project>
+      <Name>SnippetToleranceScale</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetTriangleMeshCreate.vcxproj">
+      <Project>{40819F23-7465-31E1-908C-728CFC36D636}</Project>
+      <Name>SnippetTriangleMeshCreate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetTriggers.vcxproj">
+      <Project>{D2145A3E-2BA2-3FF7-96B4-00C93A661896}</Project>
+      <Name>SnippetTriggers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetUtils.vcxproj">
+      <Project>{57540976-F77C-3C8B-BF24-321F4F80FC2D}</Project>
+      <Name>SnippetUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetVehicle4W.vcxproj">
+      <Project>{7D545FC6-82C2-30E4-8EE5-967EC4A7C47A}</Project>
+      <Name>SnippetVehicle4W</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetVehicleContactMod.vcxproj">
+      <Project>{5BA9F104-8DBC-3D58-A725-2EB3AF236B2C}</Project>
+      <Name>SnippetVehicleContactMod</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetVehicleMultiThreading.vcxproj">
+      <Project>{22C9C77B-4502-38A8-843A-A83001D8C232}</Project>
+      <Name>SnippetVehicleMultiThreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetVehicleNoDrive.vcxproj">
+      <Project>{F2C0697C-ABBC-329F-B235-9D188490EAB3}</Project>
+      <Name>SnippetVehicleNoDrive</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetVehicleScale.vcxproj">
+      <Project>{7FE3055F-3999-3D99-83EA-706EE5DF3C68}</Project>
+      <Name>SnippetVehicleScale</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win32\sdk_snippets_bin\SnippetVehicleTank.vcxproj">
+      <Project>{17DDD01C-C89C-34B1-B11B-8257855DB14C}</Project>
+      <Name>SnippetVehicleTank</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

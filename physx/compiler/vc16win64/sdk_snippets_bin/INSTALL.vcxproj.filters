@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\CMakeFiles\bb8949ae20ecba9aa4a701df0cf8cb5a\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{11A32523-0313-3809-90B5-7E4B40EB4B16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

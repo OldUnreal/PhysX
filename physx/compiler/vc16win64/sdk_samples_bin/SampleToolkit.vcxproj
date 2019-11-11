@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D37E5AB-6563-3E04-9B7B-59BC525774C7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <Platform>x64</Platform>
+    <ProjectName>SampleToolkit</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\GameDev\UnrealTournament\External\PhysX\physx\bin\win.x86_64.vc142.mt\debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">SampleToolkit.dir\debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|x64'">SamplesToolkit_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\GameDev\UnrealTournament\External\PhysX\physx\bin\win.x86_64.vc142.mt\checked\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">SampleToolkit.dir\checked\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='checked|x64'">SamplesToolkit_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='checked|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\GameDev\UnrealTournament\External\PhysX\physx\bin\win.x86_64.vc142.mt\profile\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">SampleToolkit.dir\profile\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='profile|x64'">SamplesToolkit_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='profile|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\GameDev\UnrealTournament\External\PhysX\physx\bin\win.x86_64.vc142.mt\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">SampleToolkit.dir\release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='release|x64'">SamplesToolkit_static_64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_DEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\GameDev\UnrealTournament\External\PhysX\physx\bin\win.x86_64.vc142.mt\debug\SamplesToolkit_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="checked"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\GameDev\UnrealTournament\External\PhysX\physx\bin\win.x86_64.vc142.mt\checked\SamplesToolkit_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_CHECKED=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"checked\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_PROFILE=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR="profile"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\GameDev\UnrealTournament\External\PhysX\physx\bin\win.x86_64.vc142.mt\profile\SamplesToolkit_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_PROFILE=1;PX_NVTX=0;PX_SUPPORT_PVD=1;CMAKE_INTDIR=\"profile\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4996;4245;4512;4996;4244;4100;4456;4189;4505;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN32;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_SUPPORT_PVD=0;CMAKE_INTDIR="release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\GameDev\UnrealTournament\External\PhysX\physx\bin\win.x86_64.vc142.mt\release\SamplesToolkit_static__64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;NDEBUG;WIN64;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;PX_SUPPORT_PVD=0;CMAKE_INTDIR=\"release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\GameDev\UnrealTournament\External\PhysX\physx\include;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include;C:\GameDev\UnrealTournament\External\PhysX\physx\..\pxshared\include;C:\GameDev\UnrealTournament\External\PhysX\physx\source\foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule C:/GameDev/UnrealTournament/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/public -BC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win64 --check-stamp-file C:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\targa\targa-config-version.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\targa\targa-config.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule C:/GameDev/UnrealTournament/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/public -BC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win64 --check-stamp-file C:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\targa\targa-config-version.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\targa\targa-config.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule C:/GameDev/UnrealTournament/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/public -BC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win64 --check-stamp-file C:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\targa\targa-config-version.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\targa\targa-config.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule C:/GameDev/UnrealTournament/External/PhysX/physx/samples/compiler/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/public -BC:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win64 --check-stamp-file C:/GameDev/UnrealTournament/External/PhysX/physx/compiler/vc16win64/sdk_samples_bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\ConfigureFileMT.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\GetCompilerAndPlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\NvidiaBuildOptions.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\cmakemodules\SetOutputPaths.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\targa\targa-config-version.cmake;C:\GameDev\UnrealTournament\External\PhysX\externals\targa\targa-config.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleBase.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleFramework.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SamplePlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SampleRenderer.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\Samples.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\SamplesToolkit.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\CMakeLists.txt;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleBase.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleFramework.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SamplePlatform.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SampleRenderer.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\Samples.cmake;C:\GameDev\UnrealTournament\External\PhysX\physx\samples\compiler\cmake\windows\SamplesToolkit.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\sdk_samples_bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\src\PxTkBmpLoader.cpp" />
+    <ClCompile Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\src\PxTkFPS.cpp" />
+    <ClCompile Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\src\PxTkMatrixUtils.cpp" />
+    <ClCompile Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\src\PxTkRandom.cpp" />
+    <ClCompile Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\src\PxTkStream.cpp" />
+    <ClInclude Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include\PxTkBmpLoader.h" />
+    <ClInclude Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include\PxTkFile.h" />
+    <ClInclude Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include\PxTkFPS.h" />
+    <ClInclude Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include\PxTkMatrixUtils.h" />
+    <ClInclude Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include\PxTkNamespaceMangle.h" />
+    <ClInclude Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include\PxTkRandom.h" />
+    <ClInclude Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include\PxTkStream.h" />
+    <ClInclude Include="C:\GameDev\UnrealTournament\External\PhysX\physx\samples\pxtoolkit\include\PxToolkit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\ZERO_CHECK.vcxproj">
+      <Project>{9014525E-C4C3-3CE6-BC7D-CF3E7186CC66}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysX.vcxproj">
+      <Project>{E03B8FD9-3245-3992-928C-6B7129110AC9}</Project>
+      <Name>PhysX</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXExtensions.vcxproj">
+      <Project>{D7523671-9DC3-3980-92B6-09C05DD235EF}</Project>
+      <Name>PhysXExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXFoundation.vcxproj">
+      <Project>{D74C8A41-D8E2-3062-B13A-26D0D395E9F9}</Project>
+      <Name>PhysXFoundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\GameDev\UnrealTournament\External\PhysX\physx\compiler\vc16win64\sdk_source_bin\PhysXPvdSDK.vcxproj">
+      <Project>{83FEF980-F8E0-348A-98E6-2A84449C4AC1}</Project>
+      <Name>PhysXPvdSDK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
